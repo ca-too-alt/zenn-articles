@@ -3,7 +3,7 @@ title: "【環境編】Python競馬AIを支える技術スタック (Docker, Poe
 emoji: "🐎"
 type: "tech"
 topics: ["python", "docker", "fastapi", "postgresql", "poetry"]
-published: false
+published: true
 ---
 
 # 【環境編】Python競馬AIを支える技術スタック (Docker, Poetry, Postgres)
@@ -72,4 +72,5 @@ Pythonで最も普及しているORM（Object Relational Mapper）です。
 ## まとめ：
 
 正直、アプリのコードなんて全部テキストデータだと思っていたら、たくさんのツールやらライブラリやらインストールさせられました。
+
 ともかく、環境は整いました。次の記事では、「設計」についてお話しします。
