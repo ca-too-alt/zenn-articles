@@ -3,7 +3,7 @@ title: "【加工編】未来の情報を漏らすな：特徴量エンジニア
 emoji: "🧪"
 type: "tech"
 topics: ["python", "機械学習", "featureengineering", "データリーク", "pandas"]
-published: false
+published: true
 ---
 
 # 【加工編】未来の情報を漏らすな：特徴量エンジニアリングと「指紋ファイル」
@@ -121,5 +121,6 @@ def apply_position_scaling(df):
 
 指紋ファイルで形式を整え、リークを排除し、相対評価で本質を浮き彫りにする。
 ここまで準備して初めて、まともな学習が可能になります。
+
 
 次回は、AIがレースをどう見ているのか、具体的な「特徴量」の中身について解説します。
