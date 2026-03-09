@@ -3,7 +3,7 @@ title: "【モデル編③】サブモデルの進化と工夫：予測は「何
 emoji: "🛠️"
 type: "tech"
 topics: ["python", "機械学習", "回帰分析", "特徴量設計", "データ分析"]
-published: false
+published: true
 ---
 
 # 【モデル編③】サブモデルの進化と工夫：予測は「何を」させるか
@@ -115,3 +115,4 @@ def train_model_4(df: pd.DataFrame) -> lgb.LGBMRegressor:
 
 
 次回は、こうして得られた予測結果を、最終的にどのように馬券購入に結びつけるのか、「馬券戦略と最適化」について解説します。
+
