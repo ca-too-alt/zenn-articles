@@ -3,7 +3,7 @@ title: "【検証編①】未来を予測する：Walk-Forward法とリークの
 emoji: "🧪"
 type: "tech"
 topics: ["python", "機械学習", "時系列データ", "モデル検証", "データリーク"]
-published: false
+published: true
 ---
 
 # 【検証編①】未来を予測する：Walk-Forward法とリークの完全排除
