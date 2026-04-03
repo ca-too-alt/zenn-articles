@@ -38,7 +38,7 @@ export const auth = defineAuth({
 ### 2. フロントエンドでのAmplify設定とアプリケーションの起動
 次に、フロントエンドのReactアプリケーションからAmplifyのバックエンドリソースに接続するための設定を行います。`src/main.tsx`でAmplifyライブラリを初期化し、自動生成される`amplify_outputs.json`を読み込ませます。
 
-```typescriptreact
+```tsx
 // src/main.tsx
 import ReactDOM from 'react-dom/client'
 import './index.css'
@@ -72,7 +72,7 @@ main();
 ### 3. `react-router-dom`によるルーティング設計
 アプリケーションの画面遷移を管理するために`react-router-dom`を導入しました。`src/App.tsx`でルーティングを設定し、認証状態に応じて表示するページを切り替えるようにしました。
 
-```typescriptreact
+```tsx
 // src/App.tsx (抜粋 - ルーティング設定部分)
 import { BrowserRouter as Router, Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import DocumentManagementPage from './features/document-management/routes/DocumentManagementPage';
