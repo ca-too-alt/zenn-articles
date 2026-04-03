@@ -112,15 +112,13 @@ AI（Gemini）との議論を通じて、「ファイル名はメタデータ（
 
 ```mermaid
 graph LR
-    subgraph DynamoDB (FileMetadata)
-        A[Ver 1.0 / file_A.pdf / versionGroupId: uuid-123]
-        B[Ver 2.0 / file_B.pdf / versionGroupId: uuid-123]
-        C[Ver 3.0 / file_C.pdf / versionGroupId: uuid-123]
+    subgraph ddb [DynamoDB: FileMetadata]
+        A["Ver 1.0 / file_A.pdf<br/>(ID: uuid-123)"]
+        B["Ver 2.0 / file_B.pdf<br/>(ID: uuid-123)"]
+        C["Ver 3.0 / file_C.pdf<br/>(ID: uuid-123)"]
     end
-
-    A --- B
-    B --- C
-    Note over A,C: ファイル名が変わってもIDが共通なので履歴として繋がる
+    A --> B
+    B --> C
 ```
 
 ### バージョン履歴表示のUI（React）
