@@ -3,7 +3,7 @@ title: "AI×Amplify Gen2で月40万を1万に！非エンジニアの開発記 #
 emoji: "🎬"
 type: "tech"
 topics: ["amplify", "aws", "dx", "serverless", "generativeai"]
-published: false
+published: true
 ---
 
 ## はじめに
