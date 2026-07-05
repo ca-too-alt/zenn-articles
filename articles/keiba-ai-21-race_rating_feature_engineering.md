@@ -3,7 +3,7 @@ title: "競馬AI開発記録 #21 ドメイン知識の注入とモデルの多�
 emoji: "🏇"
 type: "tech"
 topics: ["python", "machinelearning", "ai", "horse_racing", "lightgbm"]
-published: false
+published: true
 ---
 
 # 1. 概要
