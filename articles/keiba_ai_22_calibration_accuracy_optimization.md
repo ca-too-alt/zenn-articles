@@ -3,7 +3,7 @@ title: "競馬AI開発記録 #22 確率校正の精密化と動的クリッピ�
 emoji: "⚖️"
 type: "tech"
 topics: ["python", "machinelearning", "ai", "horse_racing", "calibration"]
-published: false
+published: true
 ---
 
 ### 1. 概要
