@@ -18,7 +18,7 @@ published: true
 
 ### 2-1. ドメイン知識に基づく新特徴量とモデルの2層分離設計
 「レースの格」を数値化した `race_rating` や、昇降級を捉える `class_change_score` などのドメイン特徴量を導入しました。
-$$ class\_change\_score = race\_rating_{current} - race\_rating_{previous} $$
+"$$ class\_change\_score = race\_rating_{current} - race\_rating_{previous} $$"
 さらに、システムを「実力重視のランキングモデル」と「市場乖離重視の穴馬モデル」の2層に分け、それぞれに最適な情報を与える設計を採用しました。
 
 ### 2-2. rank_xendcg を用いた連続値リレーション学習
