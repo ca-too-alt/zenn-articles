@@ -3,7 +3,7 @@ title: "競馬AI開発記録 #24：単勝特化の限界を「複勝専用モデ
 emoji: "🏆"
 type: "tech"
 topics: ["python", "machinelearning", "ai", "horse_racing", "lightgbm"]
-published: false
+published: true
 ---
 
 ## 📄 概要と課題提起 
