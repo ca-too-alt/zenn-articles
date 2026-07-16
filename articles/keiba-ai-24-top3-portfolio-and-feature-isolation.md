@@ -41,15 +41,21 @@ $$\text{P}_i = \frac{\exp(s_i / T)}{\sum_{j \in Race} \exp(s_j / T)}$$
 システムが抱える課題と解決策を視覚的に理解するため、データフロー図を用いて比較します。
 
 ```mermaid
-graph LR
-    subgraph Old_Architecture_Before_Single_Global_Feature_Space
-        A[Raw Data] --> B(Feature Engineering);
-        B --> C{Global Feature Fingerprint};
-        C --> D1[Model A: Ranking];
-        C --> D2[Model B: Top3];
-        D1 & D2 --> E(Single Calibration/Integration Layer);
+graph TD
+    A[Raw Data] --> B(Feature Engineering)
+    B --> C{Global Feature<br/>Fingerprint}
+    C --> D1[Model A: Ranking]
+    C --> D2[Model B: Top3]
+    D1 & D2 --> E(Single Calibration/<br/>Integration Layer)
+    
+    style C fill:#fdd,stroke:#c00,stroke-width:3px
+    style E fill:#fee,stroke:#c00,stroke-width:2px
     end
+```
+問題点：すべてのモデルが同じ特徴量セットを共有しているため、Top3専用の列がNaNとなり、Ranking Modelの校正データを汚染してしまいました。
 
+```mermaid
+graph TD
     subgraph New_Architecture_After_Isolated_Model_Spaces
         A --> B;
         B --> C_rank{Rank Feature Space};
@@ -63,7 +69,7 @@ graph LR
     style Old_Architecture_Before_Single_Global_Feature_Space fill:#fdd,stroke:#c00,stroke-width:2px
     style New_Architecture_After_Isolated_Model_Spaces fill:#dfd,stroke:#090,stroke-width:2px
 ```
-
+改善点：各モデルが専門化された特徴量セットを受け取ることで、NaN汚染を完全に排除し、推論層で全列データを統合しました。
 ---
 
 ## 🚨 遭遇した問題：特徴量空間の「NaN汚染」とROIの崩壊 
