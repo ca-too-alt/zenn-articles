@@ -23,7 +23,7 @@ published: false
 ### 2. マルチモデル統合スコアの設計
 ランキングモデルの「実力予測」とTOP3モデルの「複勝圏内突入期待値」を融合させるため、以下の統合スコアを定義しました。
 
-$$ \text{Integrated Score} = w \cdot \text{rank\_ranking} + (1 - w) \cdot \text{rank\_top3} $$
+$$ \text{Integrated Score} = w \cdot \text{rank}_\text{ranking} + (1 - w) \cdot \text{rank}_\text{top3} $$
 
 ここで、$w$（ranking\_weight）は年度ごとに **Optuna** を用いて 0.3 〜 0.8 の範囲で最適化されます。
 
