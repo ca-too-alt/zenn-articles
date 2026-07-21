@@ -3,7 +3,7 @@ title: "競馬AI開発記録 #25 予測空間の「統治」と統合：マル�
 emoji: "🏗️"
 type: "tech"
 topics: ["python", "machinelearning", "ai", "horse_racing", "cleanarchitecture"]
-published: false
+published: true
 ---
 
 # 概要
