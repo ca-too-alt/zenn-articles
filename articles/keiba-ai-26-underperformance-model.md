@@ -3,7 +3,7 @@ title: "競馬AI開発記録 #26 逆説のフィルタリング：人気馬の�
 emoji: "🛡️"
 type: "tech"
 topics: ["python", "machinelearning", "ai", "horse_racing", "lightgbm"]
-published: false
+published: true
 ---
 
 ### 1. 概要
