@@ -3,7 +3,7 @@ title: "競馬AI開発記録 #27 穴馬フィルタの黄金比：相互作用�
 emoji: "🎯"
 type: "tech"
 topics: ["python", "machinelearning", "ai", "horse_racing", "optuna"]
-published: false
+published: true
 ---
 
 # 1. 概要
